@@ -14,5 +14,5 @@ for chat in os.listdir('black_list/restricted_chats'):
         chat_name = chat.replace('.json', '')
         gandoniy[chat_name] = set(json.load(js))
 
-with open(r"D:\mihanProject\cons_and_vars\texts.json", encoding='utf-8') as js:
+with open(r"cons_and_vars\texts.json", encoding='utf-8') as js:
     texts = json.load(js)
