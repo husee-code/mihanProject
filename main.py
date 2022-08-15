@@ -10,7 +10,7 @@ from handlers.user_handlers import *
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
-    config.read(r"settings.ini")
+    config.read(r"root/botProject/mihanProject/settings.ini")
     api_id, api_hash = int(config["userbot"]["api_id"]), config["userbot"]["api_hash"]
     client = TelegramClient('user_bot_session', api_id, api_hash)
     register_chat_handlers(client)
